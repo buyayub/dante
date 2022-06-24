@@ -54,8 +54,7 @@
 	z-index: 9;
 }
 
-.dante_2 {
-	-index: 7;
+.dante_2 { z-index: 9;
 }
 
 .dante_3 {
@@ -65,46 +64,55 @@
 	height: auto;
 	top: -28px;
 	left: -34px;
+	will-change: transform; 
 }
 
 .dante_4 {
 	z-index: 5;
 	animation: rotation infinite 35s linear;
+	will-change: transform; 
 }
 
 .dante_5 {
 	z-index: 4;
 	animation: rotation infinite 30s linear;
+	will-change: transform; 
 }
 
 .dante_6 {
 	z-index: 3;
 	animation: rotation infinite 32s linear;
+	will-change: transform; 
 }
 
 .dante_7 {
 	z-index: 2;
 	animation: rotation infinite 25s linear;
+	will-change: transform; 
 }
 
 .dante_8 {
 	z-index: 1;
 	animation: rotation infinite 20s linear;
+	will-change: transform; 
 }
 
 .dante_9 {
 	z-index: 0;
 	animation: rotation infinite 21s linear;
+	will-change: transform; 
 }
 
 .dante_10 {
 	z-index: 2;
 	animation: rotation infinite 25s linear;
+	will-change: transform; 
 }
 
 .dante_11 {
 	z-index: 2;
 	animation: rotation infinite 28s linear;
+	will-change: transform; 
 }
 
 .dante_12 {
