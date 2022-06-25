@@ -26,6 +26,7 @@
 	width: var(--imgtw);
 	height: var(--imgth);
 	border: black 1px solid;
+	filter: brightness(0.8) contrast(1.7);
 
 }
 
@@ -38,19 +39,6 @@
 	to {
 		transform: rotate(0deg);
 		transform-origin: var(--imgw) var(--imgh);
-	}
-
-}
-
-@keyframes rotationOpposite {
-	from {
-		transform: rotate(540deg);
-		transform-origin: 251px 254px;
-	}
-
-	to {
-		transform: rotate(180deg);
-		transform-origin: 251px 254px;
 	}
 
 }
@@ -115,11 +103,6 @@
 }
 
 .dante_8 {
-	z-index: 1;
-	background-position: -1287px -476px;
-}
-
-.dante_9 {
 	z-index: 1;
 	background-position: -1287px -476px;
 }
