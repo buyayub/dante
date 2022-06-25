@@ -8,6 +8,14 @@
 	--imgexpandshifty: calc(((var(--imgth) * 1.2) - var(--imgth)) * 0.5 * -1);
 }
 
+.dante {
+	background-image: url('/public/spritesheet.webp');
+	background-repeat: no-repeat;
+
+	width: var(--imgtw);
+	height: var(--imgth);
+}
+
 #dante_image > * {
 	position: absolute;
 }
@@ -61,53 +69,64 @@
 }
 
 .dante_1 {
-	z-index: 8;
+	z-index: 9;
+	background-position: 0px 0px;
 }
 
 .dante_2 { 
 	z-index: 7;
 	animation: rotation infinite 35s linear;
+	background-position: -429px 0px;
 }
 
 .dante_3 {
 	z-index: 6;
-	animation: rotationOpposite infinite 35s linear;
-	width: calc(var(--imgtw) * 1.2);
-	height: auto;
-	top: var(--imgexpandshifty);
-	left: var(--imgexpandshiftx);
+	animation: rotation infinite 35s linear;
 	will-change: transform; 
+	background-position: -858px 0px;
 }
 
 .dante_4 {
 	z-index: 5;
 	animation: rotation infinite 35s linear;
 	will-change: transform; 
+	background-position: 0px -476px;
 }
 
 .dante_5 {
 	z-index: 4;
 	animation: rotation infinite 30s linear;
 	will-change: transform; 
+	background-position: -429px -476px;
 }
 
 .dante_6 {
 	z-index: 3;
 	animation: rotation infinite 32s linear;
 	will-change: transform; 
+	background-position: -857px -476px;
 }
 
 .dante_7 {
 	z-index: 2;
 	animation: rotation infinite 25s linear;
 	will-change: transform; 
+	background-position: -1287px 0px;
 }
 
 .dante_8 {
 	z-index: 1;
+	background-position: -1287px -476px;
+}
+
+.dante_9 {
+	z-index: 1;
+	background-position: -1287px -476px;
 }
 
 
 .dante_background {
 	z-index: -100;
+	background-position: 0px -952px;
 }
+
