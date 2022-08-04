@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			abbr{
+			    position: relative;
+			}
+
+			abbr {
+			    text-decoration: underline;
+			    text-decoration-style: dashed;
+			}
+
+			mark, dfn {
+				background-color: transparent;
+				font-style: normal;
+			}
+
+			abbr > mark:hover {
+				cursor: pointer;
+			}
+
+			abbr > mark + dfn {
+				visibility: collapse;
+			transition: opacity 0.1s, visibility step-end 0.1s;
+				z-index: 10;
+			    position: absolute;
+			    top: 25px;
+			   left: 0px; 
+			   border: 1px solid grey;
+			   background-color: white;
+			    display: block;
+			    padding: 1em;
+			    font-size: 14px;
+			    width: 196px;
+			    opacity: 0;
+			}
+
+			abbr > mark:hover + dfn {
+			    transition: opacity 0.2s;
+				visibility: visible;
+			    opacity: 1;
+			    display:inherit;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Hello, this is my test with the 
+			<abbr>
+				<mark>abbr</mark>
+				<dfn>'abbr': the gross ineptitude of men disgusts me beyond thought</dfn>
+			</abbr> 
+			attribute
+		</p>
+		<p>
+			We can do more of course. Like 
+			<abbr>
+				<mark>this one</mark>
+				<dfn>the way to the moon is through a great ordeal involving a lot of moving parts</dfn>
+			</abbr> 
+			, which can help.
+		</p>
+	</body>
+</html>
